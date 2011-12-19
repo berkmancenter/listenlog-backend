@@ -26,7 +26,9 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
-COUCHHOST = "http://clem:5984"
+COUCHHOST = "http://localhost:5984"
+#COUCHHOST = "http://clem:5984"
+
 COUCHDB = "listenlog"
 
 config.logger = Logger.new(config.log_path, 25, 2097152)
