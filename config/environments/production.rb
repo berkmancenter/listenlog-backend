@@ -28,3 +28,6 @@ config.action_view.cache_template_loading            = true
 # config.threadsafe!
 COUCHHOST = "http://clem:5984"
 COUCHDB = "listenlog"
+
+config.logger = Logger.new(config.log_path, 25, 2097152)
+config.active_record.colorize_logging = false
